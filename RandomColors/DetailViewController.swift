@@ -13,6 +13,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var boxName: UILabel!
     @IBOutlet weak var boxDescription: UILabel!
 
+    private let randomColors: [UIColor] = [.systemRed, .systemYellow, .systemPink, .systemBlue]
+    let randomColor = UIColor.random(from: [.red, .yellow, .green, .blue, .purple])
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +25,7 @@ class DetailViewController: UIViewController {
 
     //TODO: - Change color of the selected box
     @IBAction func changeColorOfBox(_ sender: Any) {
-
+        boxName.backgroundColor = randomColor
     }
 
     /*
