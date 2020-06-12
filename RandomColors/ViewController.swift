@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var randomColors: [UIColor] = [.red, .yellow, .purple, .blue]
+
     @IBOutlet weak var collectionView: UICollectionView!
 
 
@@ -18,7 +20,6 @@ class ViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
 
-        collectionView.backgroundColor = .red
     }
 }
 
@@ -32,7 +33,7 @@ extension ViewController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RandomCollectionViewCell", for: indexPath) as? RandomCollectionViewCell else {
             fatalError("Unable to dequeue PersonCell.")
         }
-        
+        cell.backgroundColor = .random()
         return cell
     }
 }
@@ -45,3 +46,19 @@ extension ViewController: UICollectionViewDelegate {
     }
 }
 
+extension CGFloat {
+    static func random() -> CGFloat {
+        return CGFloat(arc4random()) / CGFloat(UInt32.max)
+    }
+}
+
+extension UIColor {
+    static func random() -> UIColor {
+        return UIColor(
+            red:   .random(),
+            green: .random(),
+            blue:  .random(),
+            alpha: 1.0
+        )
+    }
+}
