@@ -13,6 +13,9 @@
 		4717A6AD24938AC000AA767D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4717A6AB24938AC000AA767D /* Main.storyboard */; };
 		4717A6AF24938AC200AA767D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4717A6AE24938AC200AA767D /* Assets.xcassets */; };
 		4717A6B224938AC200AA767D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4717A6B024938AC200AA767D /* LaunchScreen.storyboard */; };
+		4717A6BA24938CD900AA767D /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717A6B924938CD900AA767D /* CustomLayout.swift */; };
+		4717A6C12493943200AA767D /* RandomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717A6C02493943200AA767D /* RandomCollectionViewCell.swift */; };
+		4717A6C32493951300AA767D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717A6C22493951300AA767D /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		4717A6AE24938AC200AA767D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4717A6B124938AC200AA767D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4717A6B324938AC200AA767D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4717A6B924938CD900AA767D /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
+		4717A6C02493943200AA767D /* RandomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCollectionViewCell.swift; sourceTree = "<group>"; };
+		4717A6C22493951300AA767D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		4717A6A424938AC000AA767D /* RandomColors */ = {
 			isa = PBXGroup;
 			children = (
+				4717A6BB24938DDB00AA767D /* Views */,
 				4717A6A524938AC000AA767D /* AppDelegate.swift */,
 				4717A6A724938AC000AA767D /* SceneDelegate.swift */,
 				4717A6A924938AC000AA767D /* ViewController.swift */,
@@ -63,8 +70,18 @@
 				4717A6AE24938AC200AA767D /* Assets.xcassets */,
 				4717A6B024938AC200AA767D /* LaunchScreen.storyboard */,
 				4717A6B324938AC200AA767D /* Info.plist */,
+				4717A6B924938CD900AA767D /* CustomLayout.swift */,
+				4717A6C22493951300AA767D /* DetailViewController.swift */,
 			);
 			path = RandomColors;
+			sourceTree = "<group>";
+		};
+		4717A6BB24938DDB00AA767D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4717A6C02493943200AA767D /* RandomCollectionViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +157,10 @@
 			files = (
 				4717A6AA24938AC000AA767D /* ViewController.swift in Sources */,
 				4717A6A624938AC000AA767D /* AppDelegate.swift in Sources */,
+				4717A6BA24938CD900AA767D /* CustomLayout.swift in Sources */,
+				4717A6C32493951300AA767D /* DetailViewController.swift in Sources */,
 				4717A6A824938AC000AA767D /* SceneDelegate.swift in Sources */,
+				4717A6C12493943200AA767D /* RandomCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 554X8TL4T7;
+				DEVELOPMENT_TEAM = NMCVZ8F7S5;
 				INFOPLIST_FILE = RandomColors/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -303,7 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 554X8TL4T7;
+				DEVELOPMENT_TEAM = NMCVZ8F7S5;
 				INFOPLIST_FILE = RandomColors/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
