@@ -8,19 +8,28 @@
 
 import UIKit
 
+public let colors = ["systemRed", "systemGreen", "systemBlue", "systemPink"]
+
 class ViewController: UIViewController {
 
-    private var randomColors: [UIColor] = [.red, .yellow, .purple, .blue]
-
-    let randomColor = UIColor.random(from: [.red, .yellow, .green, .blue, .purple])
+    //    private var randomColors: [UIColor] = [.red, .yellow, .purple, .blue]
+    //
+    //    let randomColor = UIColor.random(from: [.red, .yellow, .green, .blue, .purple])
 
     @IBOutlet weak var collectionView: UICollectionView!
 
     private var indexPath: IndexPath = []
 
+    var selectedColorInfo: UIColor?
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        if let layout = collectionView?.collectionViewLayout as? RandomColorsLayout {
+            layout.delegate = self
+        }
+
         collectionView.dataSource = self
         collectionView.delegate = self
     }
@@ -39,7 +48,9 @@ extension ViewController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RandomCollectionViewCell", for: indexPath) as? RandomCollectionViewCell else {
             fatalError("Unable to dequeue RandomCell.")
         }
-        cell.backgroundColor = randomColor
+
+        cell.backgroundColor = UIColor.fromString(name: colors.randomElement())
+        selectedColorInfo = cell.backgroundColor
         return cell
     }
 }
@@ -47,7 +58,12 @@ extension ViewController: UICollectionViewDataSource {
 extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "DetailViewController")
+        let vc = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        vc.boxNumber = indexPath.row
+        vc.color = "\(selectedColorInfo ?? .white)"
+        vc.boxNameBackgroundColor = selectedColorInfo
+
+
         navigationController?.pushViewController(vc, animated: true)
     }
 
@@ -59,28 +75,27 @@ extension ViewController: UICollectionViewDelegate {
         let size = CGSize(width: number, height: Int(height))
         return size
     }
-    
 }
 
-extension UIColor {
-    static func random(from colors: [UIColor]) -> UIColor? {
-        return colors.randomElement()
+extension ViewController: RandomColorsLayoutDelegate {
+    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
+        return 130
     }
 }
 
-extension CGFloat {
-    static func random() -> CGFloat {
-        return CGFloat(arc4random()) / CGFloat(UInt32.max)
-    }
-}
+//extension CGFloat {
+//    static func random() -> CGFloat {
+//        return CGFloat(arc4random()) / CGFloat(UInt32.max)
+//    }
+//}
 
-extension UIColor {
-    static func random() -> UIColor {
-        return UIColor(
-            red:   .random(),
-            green: .random(),
-            blue:  .random(),
-            alpha: 1.0
-        )
-    }
-}
+//extension UIColor {
+//    static func random() -> UIColor {
+//        return UIColor(
+//            red:   .random(),
+//            green: .random(),
+//            blue:  .random(),
+//            alpha: 1.0
+//        )
+//    }
+//}
