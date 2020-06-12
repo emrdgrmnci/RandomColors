@@ -101,9 +101,8 @@
                                     <action selector="changeColorOfBox:" destination="At7-iF-5j8" eventType="touchUpInside" id="OG7-fz-pRT"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRP-Gz-aeo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRP-Gz-aeo">
                                 <rect key="frame" x="20" y="256" width="374" height="238"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -111,11 +110,15 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="PRP-Gz-aeo" firstAttribute="centerX" secondItem="Gb3-dg-iYR" secondAttribute="centerX" id="8gA-AC-Hat"/>
+                            <constraint firstItem="CHX-FP-aEJ" firstAttribute="bottom" secondItem="PRP-Gz-aeo" secondAttribute="bottom" constant="368" id="9tf-ZA-srK"/>
                             <constraint firstItem="tke-az-vpY" firstAttribute="top" secondItem="Gb3-dg-iYR" secondAttribute="bottom" constant="36" id="D8y-MA-SPo"/>
                             <constraint firstItem="Gb3-dg-iYR" firstAttribute="leading" secondItem="CHX-FP-aEJ" secondAttribute="leading" id="FgJ-zm-f8U"/>
+                            <constraint firstItem="PRP-Gz-aeo" firstAttribute="leading" secondItem="AWo-et-8SO" secondAttribute="leadingMargin" id="G0d-0X-ia5"/>
                             <constraint firstItem="Gb3-dg-iYR" firstAttribute="top" secondItem="CHX-FP-aEJ" secondAttribute="top" id="L4Q-6Z-a70"/>
                             <constraint firstItem="Gb3-dg-iYR" firstAttribute="trailing" secondItem="CHX-FP-aEJ" secondAttribute="trailing" id="RIe-L1-qE7"/>
                             <constraint firstItem="tke-az-vpY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CHX-FP-aEJ" secondAttribute="leading" id="nX0-at-m4C"/>
+                            <constraint firstItem="PRP-Gz-aeo" firstAttribute="top" secondItem="Gb3-dg-iYR" secondAttribute="bottom" constant="68" id="pe1-1b-5Wg"/>
                             <constraint firstItem="CHX-FP-aEJ" firstAttribute="trailing" secondItem="tke-az-vpY" secondAttribute="trailing" constant="132" id="tCV-bK-qYm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CHX-FP-aEJ"/>
