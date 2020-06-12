@@ -10,9 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var randomColors: [UIColor] = [.red, .yellow, .purple, .blue]
+    private var randomColors: [UIColor] = [.red, .yellow, .purple, .blue]
 
     @IBOutlet weak var collectionView: UICollectionView!
+
+    private var indexPath: IndexPath = []
 
 
     override func viewDidLoad() {
@@ -20,6 +22,13 @@ class ViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
 
+    }
+
+    @IBAction func refreshButton(_ sender: Any) {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RandomCollectionViewCell", for: indexPath) as? RandomCollectionViewCell else {
+                   fatalError("Unable to dequeue PersonCell.")
+               }
+               cell.backgroundColor = .random()
     }
 }
 
@@ -40,8 +49,9 @@ extension ViewController: UICollectionViewDataSource {
 
 extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let detailVC = DetailViewController()
-        navigationController?.pushViewController(detailVC, animated: true)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "DetailViewController")
+        navigationController?.pushViewController(vc, animated: true)
 
     }
 }
