@@ -17,8 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     private var indexPath: IndexPath = []
     private var selectedColorInfo: UIColor?
-    let randomItemsInSection = Int.random(in: 10...30)
-    var cellHeightAndColors = Dictionary<CGFloat, UIColor>()
+    private let randomItemsInSection = Int.random(in: 10...30)
+    private var cellHeightAndColors = Dictionary<CGFloat, UIColor>()
 
     //MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -73,7 +73,7 @@ extension ViewController: UICollectionViewDelegate {
         navigationController?.pushViewController(vc, animated: true)
     }
 
-    private func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         let heights = [100, 130, 200, 170, 150]
         let number = heights[Int(arc4random_uniform(UInt32(heights.count)))]
         let height: Double = Double((1080 / 1920) * number)
