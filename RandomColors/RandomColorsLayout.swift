@@ -11,7 +11,7 @@ import UIKit
 protocol RandomColorsLayoutDelegate: AnyObject {
     func collectionView(
         _ collectionView: UICollectionView,
-        heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat
+        heightForBoxAtIndexPath indexPath: IndexPath) -> CGFloat
 }
 
 class RandomColorsLayout: UICollectionViewLayout {
@@ -66,7 +66,7 @@ class RandomColorsLayout: UICollectionViewLayout {
         // 4
         let photoHeight = delegate?.collectionView(
           collectionView,
-          heightForPhotoAtIndexPath: indexPath) ?? 180
+          heightForBoxAtIndexPath: indexPath) ?? 180
         let height = cellPadding * 2 + photoHeight
         let frame = CGRect(x: xOffset[column],
                            y: yOffset[column],

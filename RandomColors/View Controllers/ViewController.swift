@@ -78,24 +78,13 @@ extension ViewController: UICollectionViewDelegate {
 }
 
 extension ViewController: RandomColorsLayoutDelegate {
-    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
-        return 130
+//    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
+//        return 130
+//    }
+    func collectionView(_ collectionView: UICollectionView, heightForBoxAtIndexPath indexPath: IndexPath) -> CGFloat {
+
+      let randomCGFloat = Int.random(in: 5...10)
+      let newInt = randomCGFloat * 15
+      return CGFloat(newInt)
     }
 }
-
-//extension CGFloat {
-//    static func random() -> CGFloat {
-//        return CGFloat(arc4random()) / CGFloat(UInt32.max)
-//    }
-//}
-
-//extension UIColor {
-//    static func random() -> UIColor {
-//        return UIColor(
-//            red:   .random(),
-//            green: .random(),
-//            blue:  .random(),
-//            alpha: 1.0
-//        )
-//    }
-//}
