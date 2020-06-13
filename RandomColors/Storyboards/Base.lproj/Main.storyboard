@@ -77,7 +77,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="100"/>
                                 <color key="backgroundColor" red="1" green="0.41568627450000001" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Ud8-vr-uT1"/>
+                                    <constraint firstAttribute="height" constant="100" id="wZ4-xb-TFt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                 <nil key="highlightedColor"/>
@@ -86,7 +86,8 @@
                                 <rect key="frame" x="132" y="224" width="150" height="36"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="4mL-Nc-TAA"/>
+                                    <constraint firstAttribute="width" constant="150" id="FEA-Ta-9uf"/>
+                                    <constraint firstAttribute="height" constant="36" id="sNv-7A-nmE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="RENK DEĞİŞTİR">
@@ -96,24 +97,25 @@
                                     <action selector="changeBoxColor:" destination="At7-iF-5j8" eventType="touchUpInside" id="OG7-fz-pRT"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRP-Gz-aeo">
-                                <rect key="frame" x="20" y="261.5" width="374" height="232.5"/>
-                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRP-Gz-aeo">
+                                <rect key="frame" x="20" y="297" width="384" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="1az-L3-TQX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="CHX-FP-aEJ" firstAttribute="bottom" secondItem="PRP-Gz-aeo" secondAttribute="bottom" constant="368" id="9tf-ZA-srK"/>
-                            <constraint firstItem="PRP-Gz-aeo" firstAttribute="leading" secondItem="AWo-et-8SO" secondAttribute="leadingMargin" id="G0d-0X-ia5"/>
-                            <constraint firstItem="Gb3-dg-iYR" firstAttribute="leading" secondItem="CHX-FP-aEJ" secondAttribute="leading" id="PTe-Oq-6NR"/>
-                            <constraint firstItem="tke-az-vpY" firstAttribute="top" secondItem="Gb3-dg-iYR" secondAttribute="bottom" constant="36" id="bWK-HM-ejc"/>
-                            <constraint firstItem="Gb3-dg-iYR" firstAttribute="top" secondItem="CHX-FP-aEJ" secondAttribute="top" id="bdD-6s-pgU"/>
-                            <constraint firstItem="Gb3-dg-iYR" firstAttribute="centerX" secondItem="PRP-Gz-aeo" secondAttribute="centerX" id="fyN-Mo-Ahg"/>
-                            <constraint firstItem="tke-az-vpY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CHX-FP-aEJ" secondAttribute="leading" id="nX0-at-m4C"/>
-                            <constraint firstItem="Gb3-dg-iYR" firstAttribute="centerX" secondItem="AWo-et-8SO" secondAttribute="centerX" id="q92-rX-p43"/>
-                            <constraint firstItem="CHX-FP-aEJ" firstAttribute="trailing" secondItem="tke-az-vpY" secondAttribute="trailing" constant="132" id="tCV-bK-qYm"/>
+                            <constraint firstItem="CHX-FP-aEJ" firstAttribute="trailing" secondItem="PRP-Gz-aeo" secondAttribute="trailing" constant="10" id="AvE-bY-UZU"/>
+                            <constraint firstItem="PRP-Gz-aeo" firstAttribute="top" secondItem="tke-az-vpY" secondAttribute="bottom" constant="37" id="CGz-cj-P1i"/>
+                            <constraint firstItem="Gb3-dg-iYR" firstAttribute="centerX" secondItem="tke-az-vpY" secondAttribute="centerX" id="Qgv-Co-0Tg"/>
+                            <constraint firstItem="Gb3-dg-iYR" firstAttribute="leading" secondItem="CHX-FP-aEJ" secondAttribute="leading" id="RNP-dy-bqG"/>
+                            <constraint firstItem="tke-az-vpY" firstAttribute="top" secondItem="Gb3-dg-iYR" secondAttribute="bottom" constant="36" id="fIt-9D-ELB"/>
+                            <constraint firstItem="Gb3-dg-iYR" firstAttribute="centerX" secondItem="AWo-et-8SO" secondAttribute="centerX" id="jd5-A3-c8V"/>
+                            <constraint firstItem="Gb3-dg-iYR" firstAttribute="top" secondItem="CHX-FP-aEJ" secondAttribute="top" id="oDB-EC-dKA"/>
+                            <constraint firstItem="PRP-Gz-aeo" firstAttribute="leading" secondItem="AWo-et-8SO" secondAttribute="leadingMargin" id="pB6-t6-ssL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CHX-FP-aEJ"/>
                     </view>
