@@ -17,18 +17,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     private var indexPath: IndexPath = []
     private var selectedColorInfo: UIColor?
-
     let randomItemsInSection = Int.random(in: 10...30)
     var cellHeightAndColors = Dictionary<CGFloat, UIColor>()
 
     //MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
         if let layout = collectionView?.collectionViewLayout as? RandomColorsLayout {
             layout.delegate = self
         }
-
         collectionView.dataSource = self
         collectionView.delegate = self
     }
@@ -53,15 +50,12 @@ extension ViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RandomCollectionViewCell", for: indexPath) as? RandomCollectionViewCell else {
             fatalError("Unable to dequeue RandomCell.")
         }
 
         let height = cell.frame.height
-
         cell.backgroundColor = getColor(height: height)
-        //            UIColor.fromString(name: colors.randomElement())
         selectedColorInfo = cell.backgroundColor
         return cell
     }
@@ -75,13 +69,11 @@ extension ViewController: UICollectionViewDelegate {
         vc.boxNumber = indexPath.row
         vc.color = "\(selectedColorInfo ?? .white)"
         vc.boxNameBackgroundColor = selectedColorInfo
-        
 
         navigationController?.pushViewController(vc, animated: true)
     }
 
     private func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-
         let heights = [100, 130, 200, 170, 150]
         let number = heights[Int(arc4random_uniform(UInt32(heights.count)))]
         let height: Double = Double((1080 / 1920) * number)
@@ -93,7 +85,6 @@ extension ViewController: UICollectionViewDelegate {
 //MARK: - RandomColorsLayoutDelegate
 extension ViewController: RandomColorsLayoutDelegate {
     func collectionView(_ collectionView: UICollectionView, heightForBoxAtIndexPath indexPath: IndexPath) -> CGFloat {
-
         let randomCGFloat = Int.random(in: 5...10)
         let newInt = randomCGFloat * 15
         return CGFloat(newInt)
