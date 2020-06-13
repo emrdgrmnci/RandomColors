@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     private var selectedColorInfo: UIColor?
     private let randomItemsInSection = Int.random(in: 10...30)
     private var cellHeightAndColors = Dictionary<CGFloat, UIColor>()
+    //    let cell = UICollectionViewCell?.self
+    //    let indexPathOfRefreshedColor: IndexPath?
 
     //MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -31,6 +33,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func refreshButton(_ sender: Any) {
+        DispatchQueue.main.async {
+            self.collectionView.reloadData()
+        }
     }
 
     //MARK: - Get Color and height of item
