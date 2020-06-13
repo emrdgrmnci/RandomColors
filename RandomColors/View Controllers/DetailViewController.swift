@@ -24,7 +24,7 @@ class DetailViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         boxName.text = "\(boxNumber ?? 0) numaralı kutu detayı"
-        boxDescription.text = color
+        boxDescription.text = "Renk kodu: \(color ?? "")"
         boxName.backgroundColor = boxNameBackgroundColor
     }
 
