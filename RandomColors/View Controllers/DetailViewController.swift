@@ -10,6 +10,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    //MARK: - Variables
     @IBOutlet weak var boxName: UILabel!
     @IBOutlet weak var boxDescription: UILabel!
 
@@ -17,8 +18,7 @@ class DetailViewController: UIViewController {
     var color: String?
     var boxNameBackgroundColor: UIColor?
 
-//    let randomColor = UIColor.random(from: [.red, .yellow, .green, .blue, .purple])
-
+//MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -8,21 +8,17 @@
 
 import UIKit
 
+//MARK: - Global variable
 public let colors = ["systemRed", "systemGreen", "systemBlue", "systemPink"]
 
 class ViewController: UIViewController {
 
-    //    private var randomColors: [UIColor] = [.red, .yellow, .purple, .blue]
-    //
-    //    let randomColor = UIColor.random(from: [.red, .yellow, .green, .blue, .purple])
-
+    //MARK: - Variables
     @IBOutlet weak var collectionView: UICollectionView!
-
     private var indexPath: IndexPath = []
+    private var selectedColorInfo: UIColor?
 
-    var selectedColorInfo: UIColor?
-
-
+//MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,6 +34,7 @@ class ViewController: UIViewController {
     }
 }
 
+//MARK: - UICollectionViewDataSource
 extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 50
@@ -55,6 +52,7 @@ extension ViewController: UICollectionViewDataSource {
     }
 }
 
+//MARK: - UICollectionViewDelegate
 extension ViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -77,14 +75,12 @@ extension ViewController: UICollectionViewDelegate {
     }
 }
 
+//MARK: - RandomColorsLayoutDelegate
 extension ViewController: RandomColorsLayoutDelegate {
-//    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
-//        return 130
-//    }
     func collectionView(_ collectionView: UICollectionView, heightForBoxAtIndexPath indexPath: IndexPath) -> CGFloat {
 
-      let randomCGFloat = Int.random(in: 5...10)
-      let newInt = randomCGFloat * 15
-      return CGFloat(newInt)
+        let randomCGFloat = Int.random(in: 5...10)
+        let newInt = randomCGFloat * 15
+        return CGFloat(newInt)
     }
 }
