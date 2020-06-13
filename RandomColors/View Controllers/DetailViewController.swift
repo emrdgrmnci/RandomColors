@@ -18,7 +18,7 @@ class DetailViewController: UIViewController {
     var color: String?
     var boxNameBackgroundColor: UIColor?
 
-//MARK: - View Lifecycle
+    //MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 

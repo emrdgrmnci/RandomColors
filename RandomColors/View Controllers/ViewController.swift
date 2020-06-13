@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     private var indexPath: IndexPath = []
     private var selectedColorInfo: UIColor?
 
-//MARK: - View Lifecycle
+    //MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
