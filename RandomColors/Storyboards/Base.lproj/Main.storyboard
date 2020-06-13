@@ -86,7 +86,7 @@
                                 <rect key="frame" x="132" y="224" width="150" height="36"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="FEA-Ta-9uf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="FEA-Ta-9uf"/>
                                     <constraint firstAttribute="height" constant="36" id="sNv-7A-nmE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>

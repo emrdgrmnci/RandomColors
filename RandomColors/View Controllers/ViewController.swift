@@ -18,7 +18,8 @@ class ViewController: UIViewController {
     private var indexPath: IndexPath = []
     private var selectedColorInfo: UIColor?
 
-    let randomItemsInSection = Int.random(in: 5...30)
+    let randomItemsInSection = Int.random(in: 10...30)
+    var cellHeightAndColors = Dictionary<CGFloat, UIColor>()
 
     //MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -34,8 +35,17 @@ class ViewController: UIViewController {
 
     @IBAction func refreshButton(_ sender: Any) {
     }
-}
 
+    //MARK: - Get Color and height of item
+    func getColor(height: CGFloat) -> UIColor {
+        if let color = cellHeightAndColors[height] {
+            return color
+        }
+        guard let randomColor = UIColor.fromString(name: colors.randomElement()) else { return .white}
+        cellHeightAndColors[height] = randomColor
+        return randomColor
+    }
+}
 //MARK: - UICollectionViewDataSource
 extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -48,7 +58,10 @@ extension ViewController: UICollectionViewDataSource {
             fatalError("Unable to dequeue RandomCell.")
         }
 
-        cell.backgroundColor = UIColor.fromString(name: colors.randomElement())
+        let height = cell.frame.height
+
+        cell.backgroundColor = getColor(height: height)
+        //            UIColor.fromString(name: colors.randomElement())
         selectedColorInfo = cell.backgroundColor
         return cell
     }
@@ -62,12 +75,12 @@ extension ViewController: UICollectionViewDelegate {
         vc.boxNumber = indexPath.row
         vc.color = "\(selectedColorInfo ?? .white)"
         vc.boxNameBackgroundColor = selectedColorInfo
-
+        
 
         navigationController?.pushViewController(vc, animated: true)
     }
 
-   private func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    private func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
 
         let heights = [100, 130, 200, 170, 150]
         let number = heights[Int(arc4random_uniform(UInt32(heights.count)))]
