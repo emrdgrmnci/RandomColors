@@ -17,21 +17,28 @@ extension Array {
 
 extension UIColor {
     enum ColorEnum: String {
-        case systemRed   // = "red"
-        case systemGreen // = "green"
-        case systemBlue  // = "blue"
-        case systemPink  // = "pink"
+        case systemRed
+        case systemGreen
+        case systemBlue
+        case systemPink
+        case systemTeal
+        case systemYellow
 
         func toColor() -> UIColor {
             switch self {
             case .systemRed:
                 return .systemRed
             case .systemGreen:
-                return .green
+                return .systemGreen
             case .systemBlue:
-                return .blue
+                return .systemBlue
             case .systemPink:
-                return UIColor(hue: 1.0, saturation: 0.25, brightness: 1.0, alpha: 1.0)
+                return .systemPink
+            case .systemTeal:
+                return .systemTeal
+            case .systemYellow:
+                return .systemYellow
+
             }
         }
     }
