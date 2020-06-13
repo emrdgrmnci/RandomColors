@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     }
 
     //MARK: - Get Color and height of item
-    func getColor(height: CGFloat) -> UIColor {
+    func getColor(of height: CGFloat) -> UIColor {
         if let color = cellHeightAndColors[height] {
             return color
         }
@@ -55,7 +55,7 @@ extension ViewController: UICollectionViewDataSource {
         }
 
         let height = cell.frame.height
-        cell.backgroundColor = getColor(height: height)
+        cell.backgroundColor = getColor(of: height)
         selectedColorInfo = cell.backgroundColor
         return cell
     }
