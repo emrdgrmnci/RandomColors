@@ -96,4 +96,7 @@ class RandomColorsLayout: UICollectionViewLayout {
             return cache[indexPath.item]
     }
 
+    func reloadData() {
+        self.cache = [UICollectionViewLayoutAttributes]()
+    }
 }
