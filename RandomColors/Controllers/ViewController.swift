@@ -133,7 +133,17 @@ extension ViewController: UICollectionViewDataSource {
 
 //MARK: - UICollectionViewDelegate
 extension ViewController: UICollectionViewDelegate {
-
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = DetailViewController()
+        vc.boxNumber = boxes[indexPath.row].boxNumber
+        let selectedBox = boxes[indexPath.row]
+        navigateToDetail(with: selectedBox)
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: NSIndexPath) -> CGSize {
+        let itemSize = (collectionView.frame.width - (collectionView.contentInset.left + collectionView.contentInset.right + 10)) / 2
+        return CGSize(width: itemSize, height: itemSize)
+    }
 
 
 }
