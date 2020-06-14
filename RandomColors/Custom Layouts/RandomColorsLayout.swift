@@ -18,8 +18,8 @@ class RandomColorsLayout: UICollectionViewLayout {
 
     weak var delegate: RandomColorsLayoutDelegate?
 
-    private let numberOfColumns = 2
-    private let cellPadding: CGFloat = 6
+    private let numberOfColumns = 4
+    private let cellPadding: CGFloat = 4
     private var cache: [UICollectionViewLayoutAttributes] = []
     private var contentHeight: CGFloat = 0
     private var contentWidth: CGFloat {

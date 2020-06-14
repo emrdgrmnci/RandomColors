@@ -28,11 +28,7 @@ final class ViewController: UIViewController {
 
         randomStaticBox()
 
-        if let layout = collectionView?.collectionViewLayout as? RandomColorsLayout {
-            layout.delegate = self
-        }
-        collectionView.dataSource = self
-        collectionView.delegate = self
+        prepareCollectionView()
 
     }
 
@@ -76,6 +72,14 @@ final class ViewController: UIViewController {
         cellHeightAndColors[height] = randomColor
         return randomColor
     }
+
+    private func prepareCollectionView() {
+           collectionView.dataSource = self
+           collectionView.delegate = self
+           if let layout = collectionView.collectionViewLayout as? RandomColorsLayout {
+               layout.delegate = self
+           }
+       }
 }
 //MARK: - UICollectionViewDataSource
 extension ViewController: UICollectionViewDataSource {
