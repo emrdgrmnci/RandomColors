@@ -8,10 +8,16 @@
 
 import UIKit
 
-//MARK: - Global variable
-public let colors = ["systemRed", "systemGreen", "systemBlue", "systemPink"]
+struct Box {
+    var width: Int
+    var height: Int
+    var color: UIColor
+}
 
-class ViewController: UIViewController {
+//MARK: - Global constant
+let colors = StaticColors.allCases
+
+final class ViewController: UIViewController {
 
     //MARK: - Variables
     @IBOutlet weak var collectionView: UICollectionView!
@@ -19,20 +25,48 @@ class ViewController: UIViewController {
     private var selectedColorInfo: UIColor?
     private let randomItemsInSection = Int.random(in: 10...30)
     private var cellHeightAndColors = Dictionary<CGFloat, UIColor>()
-    //    let cell = UICollectionViewCell?.self
-    //    let indexPathOfRefreshedColor: IndexPath?
+
+    static var boxes = [Box]()
 
     //MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        randomStaticBox()
+
         if let layout = collectionView?.collectionViewLayout as? RandomColorsLayout {
             layout.delegate = self
         }
         collectionView.dataSource = self
         collectionView.delegate = self
+
     }
 
+    //MARK: - randomStaticBox()
+    func randomStaticBox() {
+        ViewController.boxes = []
+        let heights = [100, 150, 200, 250, 300]
+        for _ in 1...30 {
+            let number = heights[Int(arc4random_uniform(UInt32(heights.count)))]
+            let boxItem = Box(width: 100, height: number, color: .systemRed)
+            ViewController.boxes.append(boxItem)
+        }
+
+    }
+
+    //Detay sayfasında renk değiştir butonu tıklandığında o sayfadaki renk değiştiriliyor. Ayrıca collectionviewdaki aynı özellikteki butonlarında rengi değiştiriliyor ama sayfalar arasındaki bağlantı oluşturulamadı.
+    //MARK: - changeDetailBoxColor
+    func changeDetailBox(of color: UIColor, height: Int) {
+        for i in 0...29 {
+            if ViewController.boxes[i].height == height {
+                ViewController.boxes[i] = Box(width: 100, height: height, color: .systemGray3)
+            }
+        }
+    }
+
+    //MARK: - refreshButton
     @IBAction func refreshButton(_ sender: Any) {
+        randomStaticBox()
         DispatchQueue.main.async {
             self.collectionView.reloadData()
         }
@@ -43,7 +77,8 @@ class ViewController: UIViewController {
         if let color = cellHeightAndColors[height] {
             return color
         }
-        guard let randomColor = UIColor.fromString(name: colors.randomElement()) else { return .white}
+
+        guard let randomColor = UIColor.fromString(name: colors.randomElement().rawValue) else { return .white}
         cellHeightAndColors[height] = randomColor
         return randomColor
     }
@@ -51,17 +86,17 @@ class ViewController: UIViewController {
 //MARK: - UICollectionViewDataSource
 extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return randomItemsInSection
+        //        return randomItemsInSection
+        return ViewController.boxes.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+
+        let box = ViewController.boxes[indexPath.row]
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RandomCollectionViewCell", for: indexPath) as? RandomCollectionViewCell else {
             fatalError("Unable to dequeue RandomCell.")
         }
-
-        let height = cell.frame.height
-        cell.backgroundColor = getColor(of: height)
-        selectedColorInfo = cell.backgroundColor
+        cell.backgroundColor = getColor(of: CGFloat(box.height))
         return cell
     }
 }
@@ -73,7 +108,10 @@ extension ViewController: UICollectionViewDelegate {
         let vc = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
         vc.boxNumber = indexPath.row
         vc.color = "\(selectedColorInfo ?? .white)"
-        vc.boxNameBackgroundColor = selectedColorInfo
+
+        let cellAtIndexPath = collectionView.cellForItem(at: indexPath)
+        vc.boxNameBackgroundColor = cellAtIndexPath?.backgroundColor
+        vc.height = ViewController.boxes[indexPath.row].height
 
         navigationController?.pushViewController(vc, animated: true)
     }

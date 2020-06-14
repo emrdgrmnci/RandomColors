@@ -49,7 +49,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gHm-oC-5QF" secondAttribute="bottom" id="AGr-TN-FPI"/>
                             <constraint firstItem="Wc0-Xx-wzX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="R41-Pk-ekN"/>
                             <constraint firstItem="Wc0-Xx-wzX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WW0-U0-hnF"/>
-                            <constraint firstItem="gHm-oC-5QF" firstAttribute="top" secondItem="Wc0-Xx-wzX" secondAttribute="bottom" id="eej-QN-TlQ"/>
+                            <constraint firstItem="gHm-oC-5QF" firstAttribute="top" secondItem="Wc0-Xx-wzX" secondAttribute="bottom" id="Y5R-af-rZp"/>
                             <constraint firstItem="Wc0-Xx-wzX" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lkq-hY-mdr"/>
                             <constraint firstItem="gHm-oC-5QF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zCH-CG-YL9"/>
                         </constraints>
@@ -91,10 +91,10 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="RENK DEĞİŞTİR">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="changeBoxColor:" destination="At7-iF-5j8" eventType="touchUpInside" id="OG7-fz-pRT"/>
+                                    <action selector="changeBoxColorButton:" destination="At7-iF-5j8" eventType="touchUpInside" id="OG7-fz-pRT"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRP-Gz-aeo">

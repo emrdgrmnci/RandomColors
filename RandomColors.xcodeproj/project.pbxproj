@@ -18,6 +18,7 @@
 		4717A6C32493951300AA767D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717A6C22493951300AA767D /* DetailViewController.swift */; };
 		4717A6C52493D2B700AA767D /* RandomColorsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717A6C42493D2B700AA767D /* RandomColorsLayout.swift */; };
 		4717A6CE24942FD700AA767D /* UIColor+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717A6CD24942FD700AA767D /* UIColor+Array.swift */; };
+		47F53BE824969AFE00D3EB53 /* StaticStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F53BE724969AFE00D3EB53 /* StaticStrings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		4717A6C22493951300AA767D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4717A6C42493D2B700AA767D /* RandomColorsLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorsLayout.swift; sourceTree = "<group>"; };
 		4717A6CD24942FD700AA767D /* UIColor+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Array.swift"; sourceTree = "<group>"; };
+		47F53BE724969AFE00D3EB53 /* StaticStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticStrings.swift; sourceTree = "<group>"; };
 		C1A7E42BE2203A7AAAE5A615 /* Pods-RandomColors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColors.debug.xcconfig"; path = "Target Support Files/Pods-RandomColors/Pods-RandomColors.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +139,7 @@
 		4717A6CB24942F7F00AA767D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				47F53BE624969AEC00D3EB53 /* Constants */,
 				4717A6CD24942FD700AA767D /* UIColor+Array.swift */,
 			);
 			path = Extensions;
@@ -148,6 +151,14 @@
 				4717A6C42493D2B700AA767D /* RandomColorsLayout.swift */,
 			);
 			path = "Custom Layouts";
+			sourceTree = "<group>";
+		};
+		47F53BE624969AEC00D3EB53 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				47F53BE724969AFE00D3EB53 /* StaticStrings.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		68E9966DB956CA5301DA9941 /* Frameworks */ = {
@@ -282,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47F53BE824969AFE00D3EB53 /* StaticStrings.swift in Sources */,
 				4717A6C52493D2B700AA767D /* RandomColorsLayout.swift in Sources */,
 				4717A6AA24938AC000AA767D /* ViewController.swift in Sources */,
 				4717A6A624938AC000AA767D /* AppDelegate.swift in Sources */,
