@@ -20,6 +20,8 @@
 		4717A6CE24942FD700AA767D /* UIColor+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717A6CD24942FD700AA767D /* UIColor+Array.swift */; };
 		47F53BE824969AFE00D3EB53 /* StaticStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F53BE724969AFE00D3EB53 /* StaticStrings.swift */; };
 		47F53BEB24969CBE00D3EB53 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F53BEA24969CBD00D3EB53 /* Box.swift */; };
+		47F53BEE2496AE2D00D3EB53 /* UIColor+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F53BED2496AE2D00D3EB53 /* UIColor+HexString.swift */; };
+		47F53BF02496B07D00D3EB53 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F53BEF2496B07D00D3EB53 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		4717A6CD24942FD700AA767D /* UIColor+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Array.swift"; sourceTree = "<group>"; };
 		47F53BE724969AFE00D3EB53 /* StaticStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticStrings.swift; sourceTree = "<group>"; };
 		47F53BEA24969CBD00D3EB53 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		47F53BED2496AE2D00D3EB53 /* UIColor+HexString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexString.swift"; sourceTree = "<group>"; };
+		47F53BEF2496B07D00D3EB53 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		C1A7E42BE2203A7AAAE5A615 /* Pods-RandomColors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColors.debug.xcconfig"; path = "Target Support Files/Pods-RandomColors/Pods-RandomColors.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,15 +79,15 @@
 		4717A6A424938AC000AA767D /* RandomColors */ = {
 			isa = PBXGroup;
 			children = (
+				4717A6C824942EF400AA767D /* Application Delegate */,
+				4717A6BB24938DDB00AA767D /* Cells */,
+				4717A6C924942F0F00AA767D /* Controllers */,
+				4794455D2494B1AA00B0A0D2 /* Custom Layouts */,
 				47F53BEC24969FFC00D3EB53 /* Helpers */,
 				47F53BE924969CB200D3EB53 /* Models */,
-				4794455D2494B1AA00B0A0D2 /* Custom Layouts */,
-				4717A6CA24942F3A00AA767D /* Storyboards */,
-				4717A6C824942EF400AA767D /* Application Delegate */,
 				4717A6C624942DC500AA767D /* Resources */,
+				4717A6CA24942F3A00AA767D /* Storyboards */,
 				4717A6C724942DD800AA767D /* Supporting Files */,
-				4717A6C924942F0F00AA767D /* Controllers */,
-				4717A6BB24938DDB00AA767D /* Cells */,
 			);
 			path = RandomColors;
 			sourceTree = "<group>";
@@ -144,6 +148,7 @@
 			children = (
 				47F53BE624969AEC00D3EB53 /* Constants */,
 				4717A6CD24942FD700AA767D /* UIColor+Array.swift */,
+				47F53BED2496AE2D00D3EB53 /* UIColor+HexString.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				47F53BEA24969CBD00D3EB53 /* Box.swift */,
+				47F53BEF2496B07D00D3EB53 /* Colors.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -313,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47F53BEB24969CBE00D3EB53 /* Box.swift in Sources */,
+				47F53BF02496B07D00D3EB53 /* Colors.swift in Sources */,
 				47F53BE824969AFE00D3EB53 /* StaticStrings.swift in Sources */,
 				4717A6C52493D2B700AA767D /* RandomColorsLayout.swift in Sources */,
 				4717A6AA24938AC000AA767D /* ViewController.swift in Sources */,
@@ -320,6 +327,7 @@
 				4717A6C32493951300AA767D /* DetailViewController.swift in Sources */,
 				4717A6CE24942FD700AA767D /* UIColor+Array.swift in Sources */,
 				4717A6A824938AC000AA767D /* SceneDelegate.swift in Sources */,
+				47F53BEE2496AE2D00D3EB53 /* UIColor+HexString.swift in Sources */,
 				4717A6C12493943200AA767D /* RandomCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

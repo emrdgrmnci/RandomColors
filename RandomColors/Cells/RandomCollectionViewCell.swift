@@ -9,5 +9,11 @@
 import UIKit
 
 class RandomCollectionViewCell: UICollectionViewCell {
-    
+    var box: Box? {
+        didSet {
+            if let box = box {
+                self.backgroundColor = UIColor(hexString: box.color.rawValue)
+            }
+        }
+    }
 }

@@ -18,7 +18,7 @@ class RandomColorsLayout: UICollectionViewLayout {
 
     weak var delegate: RandomColorsLayoutDelegate?
 
-    private let numberOfColumns = 4
+    private var numberOfColumns = 4
     private let cellPadding: CGFloat = 4
     private var cache: [UICollectionViewLayoutAttributes] = []
     private var contentHeight: CGFloat = 0
@@ -35,6 +35,10 @@ class RandomColorsLayout: UICollectionViewLayout {
     }
 
     override func prepare() {
+
+         let columns =  [2, 3, 4, 5]
+        numberOfColumns = columns.randomElement() ?? 4
+
         guard
             cache.isEmpty,
             let collectionView = collectionView

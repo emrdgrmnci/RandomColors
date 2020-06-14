@@ -15,32 +15,28 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var boxDescription: UILabel!
 
     var boxNumber: Int?
-    var color: String?
-    var boxNameBackgroundColor: UIColor?
-    var vc = ViewController()
-    var indexPath: IndexPath?
-    var randColor: String = ""
-    var height: Int = 0
+    var selectedBox: Box!
+    var allColors: [Box] = [SystemRed(), SystemGreen(), SystemYellow(), SystemBlue()]
 
     //MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        boxName.text = "\(boxNumber ?? 0) numaralı kutu detayı"
-        boxDescription.text = "Renk kodu: \(color ?? "")"
-        boxName.backgroundColor = boxNameBackgroundColor
+        updateLayout()
     }
 
-    override func viewDidDisappear(_ animated: Bool) {
-        vc.changeDetailBox(of: .black, height: height)
+    //MARK: - updateLayout()
+    func updateLayout() {
+        boxName.text = "\(boxNumber ?? 0) numaralı \(selectedBox.boxName ) renkli kutu"
+        boxDescription.text = "Renk kodu: \(Lorem.dummy.rawValue)"
+        boxName.backgroundColor = UIColor(hexString: selectedBox.color.rawValue)
     }
 
     //MARK: - changeBoxColor button
     @IBAction func changeBoxColorButton(_ sender: Any) {
-        randColor = colors.randomElement().rawValue
-        boxName.backgroundColor = UIColor.fromString(name: randColor)
+        let currentColor = selectedBox.color
+        selectedBox = allColors.randomElement()
+        updateLayout()
+        NotificationCenter.default.post(name: Notification.Name("UpdateBox"), object: nil, userInfo: ["prevColor": selectedBox!.color, "currColor": currentColor])
 
     }
-
 }
