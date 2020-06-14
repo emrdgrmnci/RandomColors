@@ -27,6 +27,7 @@ final class ViewController: UIViewController {
     //MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        randomStaticBox()
         prepareCollectionView()
     }
 
@@ -36,6 +37,40 @@ final class ViewController: UIViewController {
     }
 
 
+    //MARK: - randomStaticBox()
+    func randomStaticBox() {
+        boxes = []
+        guard let maximumNumber = (50...250).randomElement() else { return }
+        let total = Array(0...maximumNumber)
+        let _ = total.map { _ in
+            if let randomBox = allColors.randomElement() {
+                boxes.append(randomBox)
+            }
+        }
+    }
+
+    @objc private func updateBox(_ notification: NSNotification) {
+        if let userInfo = notification.userInfo as NSDictionary? {
+            if let prevColor = userInfo["prevColor"] as? Color, let currColor = userInfo["currColor"] as? Color {
+                guard prevColor != currColor else { return }
+                for index in 0..<boxes.count {
+                    if boxes[index].color == currColor {
+                        switch prevColor {
+                        case .systemBlue:
+                            boxes[index] = SystemBlue()
+                        case .systemGreen:
+                            boxes[index] = SystemGreen()
+                        case .systemRed:
+                            boxes[index] = SystemRed()
+                        case .systemYellow:
+                            boxes[index] = SystemYellow()
+                        }
+                    }
+                }
+                reloadDataAndLayout()
+            }
+        }
+    }
 
     private func prepareCollectionView() {
         collectionView.dataSource = self
