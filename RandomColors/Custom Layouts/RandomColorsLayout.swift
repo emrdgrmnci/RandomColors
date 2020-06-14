@@ -18,8 +18,8 @@ class RandomColorsLayout: UICollectionViewLayout {
 
     weak var delegate: RandomColorsLayoutDelegate?
 
-    private var numberOfColumns = 4
-    private let cellPadding: CGFloat = 4
+    private var columnNumber = 3
+    private let cellPadding: CGFloat = 3
     private var cache: [UICollectionViewLayoutAttributes] = []
     private var contentHeight: CGFloat = 0
     private var contentWidth: CGFloat {
@@ -37,7 +37,7 @@ class RandomColorsLayout: UICollectionViewLayout {
     override func prepare() {
 
          let columns =  [2, 3, 4, 5]
-        numberOfColumns = columns.randomElement() ?? 4
+        columnNumber = columns.randomElement() ?? 3
 
         guard
             cache.isEmpty,
@@ -45,13 +45,13 @@ class RandomColorsLayout: UICollectionViewLayout {
             else {
                 return
         }
-        let columnWidth = contentWidth / CGFloat(numberOfColumns)
+        let columnWidth = contentWidth / CGFloat(columnNumber)
         var xOffset: [CGFloat] = []
-        for column in 0..<numberOfColumns {
+        for column in 0..<columnNumber {
             xOffset.append(CGFloat(column) * columnWidth)
         }
         var column = 0
-        var yOffset: [CGFloat] = .init(repeating: 0, count: numberOfColumns)
+        var yOffset: [CGFloat] = .init(repeating: 0, count: columnNumber)
 
         for item in 0..<collectionView.numberOfItems(inSection: 0) {
             let indexPath = IndexPath(item: item, section: 0)
@@ -73,7 +73,7 @@ class RandomColorsLayout: UICollectionViewLayout {
             contentHeight = max(contentHeight, frame.maxY)
             yOffset[column] = yOffset[column] + height
 
-            column = column < (numberOfColumns - 1) ? (column + 1) : 0
+            column = column < (columnNumber - 1) ? (column + 1) : 0
         }
     }
 
