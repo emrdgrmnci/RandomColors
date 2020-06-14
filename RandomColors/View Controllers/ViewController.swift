@@ -8,12 +8,6 @@
 
 import UIKit
 
-struct Box {
-    var width: Int
-    var height: Int
-    var color: UIColor
-}
-
 //MARK: - Global constant
 let colors = StaticColors.allCases
 

@@ -19,6 +19,7 @@
 		4717A6C52493D2B700AA767D /* RandomColorsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717A6C42493D2B700AA767D /* RandomColorsLayout.swift */; };
 		4717A6CE24942FD700AA767D /* UIColor+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717A6CD24942FD700AA767D /* UIColor+Array.swift */; };
 		47F53BE824969AFE00D3EB53 /* StaticStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F53BE724969AFE00D3EB53 /* StaticStrings.swift */; };
+		47F53BEB24969CBE00D3EB53 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F53BEA24969CBD00D3EB53 /* Box.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		4717A6C42493D2B700AA767D /* RandomColorsLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorsLayout.swift; sourceTree = "<group>"; };
 		4717A6CD24942FD700AA767D /* UIColor+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Array.swift"; sourceTree = "<group>"; };
 		47F53BE724969AFE00D3EB53 /* StaticStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticStrings.swift; sourceTree = "<group>"; };
+		47F53BEA24969CBD00D3EB53 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		C1A7E42BE2203A7AAAE5A615 /* Pods-RandomColors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColors.debug.xcconfig"; path = "Target Support Files/Pods-RandomColors/Pods-RandomColors.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 		4717A6A424938AC000AA767D /* RandomColors */ = {
 			isa = PBXGroup;
 			children = (
+				47F53BE924969CB200D3EB53 /* Models */,
 				4794455D2494B1AA00B0A0D2 /* Custom Layouts */,
 				4717A6CB24942F7F00AA767D /* Extensions */,
 				4717A6CA24942F3A00AA767D /* Storyboards */,
@@ -159,6 +162,14 @@
 				47F53BE724969AFE00D3EB53 /* StaticStrings.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		47F53BE924969CB200D3EB53 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				47F53BEA24969CBD00D3EB53 /* Box.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		68E9966DB956CA5301DA9941 /* Frameworks */ = {
@@ -293,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47F53BEB24969CBE00D3EB53 /* Box.swift in Sources */,
 				47F53BE824969AFE00D3EB53 /* StaticStrings.swift in Sources */,
 				4717A6C52493D2B700AA767D /* RandomColorsLayout.swift in Sources */,
 				4717A6AA24938AC000AA767D /* ViewController.swift in Sources */,
