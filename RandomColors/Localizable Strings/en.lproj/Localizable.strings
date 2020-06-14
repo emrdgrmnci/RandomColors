@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  RandomColors
+
+  Created by Ali Emre Değirmenci on 15.06.2020.
+  Copyright © 2020 Ali Emre Degirmenci. All rights reserved.
+*/
+
+"CHANGE COLOR" = "CHANGE COLOR";
+"Back" = "Back";
+"Brick" = "Bric";
+"REFRESH" = "REFRESH";
+"Color Code:" = "Color Code:";
+"Colorful Box" = "Colorful Box";
+"box" = "Number                                          with color box";

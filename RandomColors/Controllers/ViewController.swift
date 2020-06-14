@@ -22,7 +22,7 @@ final class ViewController: UIViewController {
     private var cellHeightAndColors = Dictionary<CGFloat, UIColor>()
 
     let allColors: [Box] = [SystemRed(), SystemYellow(), SystemGreen(), SystemBlue()]
-    var boxes = [Box]()
+    var boxes: [Box] = []
 
     //MARK: - View Lifecycle
     override func viewDidLoad() {
@@ -40,7 +40,7 @@ final class ViewController: UIViewController {
     //MARK: - randomStaticBox()
     func randomStaticBox() {
         boxes = []
-        guard let maximumNumber = (50...250).randomElement() else { return }
+        guard let maximumNumber = (100...400).randomElement() else { return }
         let total = Array(0...maximumNumber)
         let _ = total.map { _ in
             if let randomBox = allColors.randomElement() {
@@ -139,7 +139,7 @@ extension ViewController: UICollectionViewDelegate {
         let selectedBox = boxes[indexPath.row]
         navigateToDetail(with: selectedBox)
     }
-    
+
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: NSIndexPath) -> CGSize {
         let itemSize = (collectionView.frame.width - (collectionView.contentInset.left + collectionView.contentInset.right + 10)) / 2
         return CGSize(width: itemSize, height: itemSize)

@@ -26,8 +26,8 @@ class DetailViewController: UIViewController {
 
     //MARK: - updateLayout()
     func updateLayout() {
-        boxName.text = "\(boxNumber ?? 0) numaralı \(selectedBox.boxName ) renkli kutu"
-        boxDescription.text = "Renk kodu: \(Lorem.dummy.rawValue)"
+        boxName.text = NSLocalizedString("\(boxNumber ?? 0) numaralı \(selectedBox.boxName ) renkli kutu", comment: "")
+        boxDescription.text =  NSLocalizedString("Renk kodu: \(Lorem.dummy.rawValue)", comment: "")
         boxName.backgroundColor = UIColor(hexString: selectedBox.color.rawValue)
     }
 

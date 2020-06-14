@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  RandomColors
+
+  Created by Ali Emre Değirmenci on 15.06.2020.
+  Copyright © 2020 Ali Emre Degirmenci. All rights reserved.
+*/
+
+"CHANGE COLOR" = "RENK DEĞİŞTİR";
+"Back" = "Geri";
+"Brick" = "Kutu";
+"REFRESH" = "YENİLE";
+"Color Code:" = "Renk Kodu:";
+"Colorful Box" = "Renkli Kutu";
+"box" = "                 numaralı                         renkli kutu";
