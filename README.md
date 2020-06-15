@@ -3,20 +3,20 @@
 Purpose of the project
 ======================
 
-This is the job applying project which has a list of random color and number boxes.
+This is the Tekna IT job applying project which has a list of random color and number boxes.
 
 
 Here are the screens
 ======================
 <p float="left">
-<img src="RandomColors/RandomColors/ScreenImages/ScreenImages.png" width="1200" height= "358"/>&nbsp; 
+<img src="RandomColors/ScreenImages/ScreenImages.png" width="1200" height= "358"/>&nbsp; 
   </br> 
 </p>
 
 ## Tech-stack :calling:
 
 
-* [MVC]
+* [MVC](https://www.raywenderlich.com/1000705-model-view-controller-mvc-in-ios-a-modern-approach)
 
 * [Swift 5](https://github.com/apple/swift)
 
