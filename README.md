@@ -3,13 +3,13 @@
 Purpose of the project
 ======================
 
-This is the Tekna IT job applying project which has a list of random color and number boxes.
+This is the Tekna IT job applying project which has a list of random colors and numbers of boxes.
 
 
 Here are the screens
 ======================
 <p float="left">
-<img src="RandomColors/ScreenImages/ScreenImages.png" width="1500" height= "2920"/>&nbsp; 
+<img src="RandomColors/ScreenImages/ScreenImages.png" width="750" height= "1460"/>&nbsp; 
   </br> 
 </p>
 
