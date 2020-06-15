@@ -10,6 +10,7 @@
 
 import UIKit
 
+//MARK: - Delegate
 protocol RandomColorsLayoutDelegate: AnyObject {
     func collectionView(
         _ collectionView: UICollectionView,
@@ -18,6 +19,7 @@ protocol RandomColorsLayoutDelegate: AnyObject {
 
 class RandomColorsLayout: UICollectionViewLayout {
 
+    //MARK: - Variables
     weak var delegate: RandomColorsLayoutDelegate?
 
     private var columnNumber = 3
@@ -93,6 +95,7 @@ class RandomColorsLayout: UICollectionViewLayout {
             return cache[indexPath.item]
     }
 
+    //MARK: - reloadData()
     func reloadData() {
         self.cache = [UICollectionViewLayoutAttributes]()
     }
