@@ -17,6 +17,7 @@
 		4717A6C32493951300AA767D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717A6C22493951300AA767D /* DetailViewController.swift */; };
 		4717A6C52493D2B700AA767D /* RandomColorsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717A6C42493D2B700AA767D /* RandomColorsLayout.swift */; };
 		4717A6CE24942FD700AA767D /* UIColor+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717A6CD24942FD700AA767D /* UIColor+Array.swift */; };
+		472E109A24975C0A00C02456 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 472E109924975C0A00C02456 /* README.md */; };
 		47F53BE824969AFE00D3EB53 /* StaticStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F53BE724969AFE00D3EB53 /* StaticStrings.swift */; };
 		47F53BEE2496AE2D00D3EB53 /* UIColor+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F53BED2496AE2D00D3EB53 /* UIColor+HexString.swift */; };
 		47F53BF02496B07D00D3EB53 /* BoxColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F53BEF2496B07D00D3EB53 /* BoxColors.swift */; };
@@ -36,6 +37,7 @@
 		4717A6C22493951300AA767D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4717A6C42493D2B700AA767D /* RandomColorsLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorsLayout.swift; sourceTree = "<group>"; };
 		4717A6CD24942FD700AA767D /* UIColor+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Array.swift"; sourceTree = "<group>"; };
+		472E109924975C0A00C02456 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		47F53BE724969AFE00D3EB53 /* StaticStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticStrings.swift; sourceTree = "<group>"; };
 		47F53BED2496AE2D00D3EB53 /* UIColor+HexString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexString.swift"; sourceTree = "<group>"; };
 		47F53BEF2496B07D00D3EB53 /* BoxColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxColors.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 		4717A69924938AC000AA767D = {
 			isa = PBXGroup;
 			children = (
+				472E109924975C0A00C02456 /* README.md */,
 				4717A6A424938AC000AA767D /* RandomColors */,
 				4717A6A324938AC000AA767D /* Products */,
 				D6D0BF7D4EFC4B5217444BD8 /* Pods */,
@@ -259,6 +262,7 @@
 			files = (
 				4717A6B224938AC200AA767D /* LaunchScreen.storyboard in Resources */,
 				47F53BF62496CD3300D3EB53 /* Localizable.strings in Resources */,
+				472E109A24975C0A00C02456 /* README.md in Resources */,
 				4717A6AF24938AC200AA767D /* Assets.xcassets in Resources */,
 				4717A6AD24938AC000AA767D /* Main.storyboard in Resources */,
 			);
