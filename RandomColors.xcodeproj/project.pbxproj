@@ -19,9 +19,8 @@
 		4717A6C52493D2B700AA767D /* RandomColorsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717A6C42493D2B700AA767D /* RandomColorsLayout.swift */; };
 		4717A6CE24942FD700AA767D /* UIColor+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717A6CD24942FD700AA767D /* UIColor+Array.swift */; };
 		47F53BE824969AFE00D3EB53 /* StaticStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F53BE724969AFE00D3EB53 /* StaticStrings.swift */; };
-		47F53BEB24969CBE00D3EB53 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F53BEA24969CBD00D3EB53 /* Box.swift */; };
 		47F53BEE2496AE2D00D3EB53 /* UIColor+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F53BED2496AE2D00D3EB53 /* UIColor+HexString.swift */; };
-		47F53BF02496B07D00D3EB53 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F53BEF2496B07D00D3EB53 /* Colors.swift */; };
+		47F53BF02496B07D00D3EB53 /* BoxColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F53BEF2496B07D00D3EB53 /* BoxColors.swift */; };
 		47F53BF62496CD3300D3EB53 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 47F53BF82496CD3300D3EB53 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -41,9 +40,8 @@
 		4717A6C42493D2B700AA767D /* RandomColorsLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorsLayout.swift; sourceTree = "<group>"; };
 		4717A6CD24942FD700AA767D /* UIColor+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Array.swift"; sourceTree = "<group>"; };
 		47F53BE724969AFE00D3EB53 /* StaticStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticStrings.swift; sourceTree = "<group>"; };
-		47F53BEA24969CBD00D3EB53 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		47F53BED2496AE2D00D3EB53 /* UIColor+HexString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexString.swift"; sourceTree = "<group>"; };
-		47F53BEF2496B07D00D3EB53 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		47F53BEF2496B07D00D3EB53 /* BoxColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxColors.swift; sourceTree = "<group>"; };
 		47F53BF12496CCB900D3EB53 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
 		47F53BF22496CCBA00D3EB53 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		47F53BF72496CD3300D3EB53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -178,8 +176,7 @@
 		47F53BE924969CB200D3EB53 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				47F53BEA24969CBD00D3EB53 /* Box.swift */,
-				47F53BEF2496B07D00D3EB53 /* Colors.swift */,
+				47F53BEF2496B07D00D3EB53 /* BoxColors.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -334,8 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47F53BEB24969CBE00D3EB53 /* Box.swift in Sources */,
-				47F53BF02496B07D00D3EB53 /* Colors.swift in Sources */,
+				47F53BF02496B07D00D3EB53 /* BoxColors.swift in Sources */,
 				47F53BE824969AFE00D3EB53 /* StaticStrings.swift in Sources */,
 				4717A6C52493D2B700AA767D /* RandomColorsLayout.swift in Sources */,
 				4717A6AA24938AC000AA767D /* ViewController.swift in Sources */,
