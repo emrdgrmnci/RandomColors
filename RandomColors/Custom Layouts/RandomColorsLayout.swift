@@ -6,6 +6,8 @@
 //  Copyright © 2020 Ali Emre Degirmenci. All rights reserved.
 //
 
+#warning("I got this code from https://www.raywenderlich.com/4829472-uicollectionview-custom-layout-tutorial-pinterest due to I didn't calculate collectionView layouts. I added 'let columns =  [2, 3, 4, 5] columnNumber = columns.randomElement() ?? 3' and 'func reloadData() {self.cache = [UICollectionViewLayoutAttributes]()}' code lines for random column generate and reloading data")
+
 import UIKit
 
 protocol RandomColorsLayoutDelegate: AnyObject {
@@ -35,10 +37,8 @@ class RandomColorsLayout: UICollectionViewLayout {
     }
 
     override func prepare() {
-
-         let columns =  [2, 3, 4, 5]
+        let columns =  [2, 3, 4, 5]
         columnNumber = columns.randomElement() ?? 3
-
         guard
             cache.isEmpty,
             let collectionView = collectionView
@@ -65,14 +65,11 @@ class RandomColorsLayout: UICollectionViewLayout {
                                width: columnWidth,
                                height: height)
             let insetFrame = frame.insetBy(dx: cellPadding, dy: cellPadding)
-
             let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
             attributes.frame = insetFrame
             cache.append(attributes)
-
             contentHeight = max(contentHeight, frame.maxY)
             yOffset[column] = yOffset[column] + height
-
             column = column < (columnNumber - 1) ? (column + 1) : 0
         }
     }
