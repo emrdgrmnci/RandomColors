@@ -12,4 +12,9 @@
 "REFRESH" = "REFRESH";
 "Color Code:" = "Color Code:";
 "Colorful Box" = "Colorful Box";
-"box" = "Number                                          with color box";
+"box" = "box";
+"Number" = "Numara";
+"number" = "number";
+"colorful" = "colorful";
+"Description: %@" = "Description: %@";
+"Number %d %@ color box" = "Number %d %@ color box";

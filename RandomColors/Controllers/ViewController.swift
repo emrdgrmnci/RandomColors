@@ -80,17 +80,6 @@ final class ViewController: UIViewController {
         }
     }
 
-    //Detay sayfasında renk değiştir butonu tıklandığında o sayfadaki renk değiştiriliyor. Ayrıca collectionviewdaki aynı özellikteki butonlarında rengi değiştiriliyor ama sayfalar arasındaki bağlantı oluşturulamadı.
-    //MARK: - changeDetailBoxColor
-    //    func changeDetailBox(of color: UIColor, height: Int) {
-    //        for i in 0...29 {
-    //            if ViewController.boxes[i].height == height {
-    //                ViewController.boxes[i] = Box(width: 100, height: height, boxName: "", color: )
-    //                ViewController.boxes[i] = Box(width: 100, height: height, color: .systemGray3)
-    //            }
-    //        }
-    //    }
-
     private func reloadDataAndLayout() {
         if let layout = collectionView.collectionViewLayout as? RandomColorsLayout {
             layout.invalidateLayout()
@@ -144,8 +133,6 @@ extension ViewController: UICollectionViewDelegate {
         let itemSize = (collectionView.frame.width - (collectionView.contentInset.left + collectionView.contentInset.right + 10)) / 2
         return CGSize(width: itemSize, height: itemSize)
     }
-
-
 }
 
 //MARK: - RandomColorsLayoutDelegate

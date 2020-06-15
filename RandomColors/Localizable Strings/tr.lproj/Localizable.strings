@@ -12,4 +12,9 @@
 "REFRESH" = "YENİLE";
 "Color Code:" = "Renk Kodu:";
 "Colorful Box" = "Renkli Kutu";
-"box" = "                 numaralı                         renkli kutu";
+"box" = "kutu";
+"number" = "numaralı";
+"Number" = "Numara";
+"colorful" = "renkli";
+"Description: %@" = "Açıklama: %@";
+"Number %d %@ color box" = "%d numaralı %@ renkli kutu";
