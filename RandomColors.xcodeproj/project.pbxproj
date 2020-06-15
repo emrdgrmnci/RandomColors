@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C40D294D4CF543BB5EC18EF /* Pods_RandomColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269B3BC88F62CB20ADE9B62B /* Pods_RandomColors.framework */; };
 		4717A6A624938AC000AA767D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717A6A524938AC000AA767D /* AppDelegate.swift */; };
 		4717A6A824938AC000AA767D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717A6A724938AC000AA767D /* SceneDelegate.swift */; };
 		4717A6AA24938AC000AA767D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4717A6A924938AC000AA767D /* ViewController.swift */; };
@@ -25,8 +24,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		269B3BC88F62CB20ADE9B62B /* Pods_RandomColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C74CC870C9C9EEB5F221985 /* Pods-RandomColors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColors.release.xcconfig"; path = "Target Support Files/Pods-RandomColors/Pods-RandomColors.release.xcconfig"; sourceTree = "<group>"; };
 		4717A6A224938AC000AA767D /* RandomColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4717A6A524938AC000AA767D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4717A6A724938AC000AA767D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +43,6 @@
 		47F53BF22496CCBA00D3EB53 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		47F53BF72496CD3300D3EB53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		47F53BF92496CD3C00D3EB53 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		C1A7E42BE2203A7AAAE5A615 /* Pods-RandomColors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomColors.debug.xcconfig"; path = "Target Support Files/Pods-RandomColors/Pods-RandomColors.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +50,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C40D294D4CF543BB5EC18EF /* Pods_RandomColors.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +62,6 @@
 				4717A6A424938AC000AA767D /* RandomColors */,
 				4717A6A324938AC000AA767D /* Products */,
 				D6D0BF7D4EFC4B5217444BD8 /* Pods */,
-				68E9966DB956CA5301DA9941 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,19 +191,9 @@
 			path = "Localizable Strings";
 			sourceTree = "<group>";
 		};
-		68E9966DB956CA5301DA9941 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				269B3BC88F62CB20ADE9B62B /* Pods_RandomColors.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		D6D0BF7D4EFC4B5217444BD8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C1A7E42BE2203A7AAAE5A615 /* Pods-RandomColors.debug.xcconfig */,
-				2C74CC870C9C9EEB5F221985 /* Pods-RandomColors.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -221,7 +205,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4717A6B624938AC200AA767D /* Build configuration list for PBXNativeTarget "RandomColors" */;
 			buildPhases = (
-				C38556A06C372006281C31BA /* [CP] Check Pods Manifest.lock */,
 				4717A69E24938AC000AA767D /* Sources */,
 				4717A69F24938AC000AA767D /* Frameworks */,
 				4717A6A024938AC000AA767D /* Resources */,
@@ -282,31 +265,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		C38556A06C372006281C31BA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RandomColors-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4717A69E24938AC000AA767D /* Sources */ = {
@@ -477,7 +435,6 @@
 		};
 		4717A6B724938AC200AA767D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1A7E42BE2203A7AAAE5A615 /* Pods-RandomColors.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -496,7 +453,6 @@
 		};
 		4717A6B824938AC200AA767D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C74CC870C9C9EEB5F221985 /* Pods-RandomColors.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
