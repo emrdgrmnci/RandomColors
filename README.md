@@ -1,4 +1,4 @@
-# Random Colors Application [![Swift](https://img.shields.io/badge/Swift-5.1-orange.svg)]() [![Platform](https://img.shields.io/badge/platform-iOS13.1-lightgrey.svg)]()
+# Random Colors Application [![Swift](https://img.shields.io/badge/Swift-5.1-orange.svg)]() [![Platform](https://img.shields.io/badge/platform-iOS13.5-lightgrey.svg)]()
 
 Purpose of the project
 ======================
@@ -9,7 +9,7 @@ This is the Tekna IT job applying project which has a list of random color and n
 Here are the screens
 ======================
 <p float="left">
-<img src="RandomColors/ScreenImages/ScreenImages.png" width="1200" height= "358"/>&nbsp; 
+<img src="RandomColors/ScreenImages/ScreenImages.png" width="1500" height= "2920"/>&nbsp; 
   </br> 
 </p>
 
