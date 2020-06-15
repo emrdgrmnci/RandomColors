@@ -3,127 +3,63 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12755C4D8E721C9CA2329FB7FCBCD347 /* Pods-RandomColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9219DD6CFB119D381BAD92E0B8850A /* Pods-RandomColors-dummy.m */; };
-		1EAB13CD10A30C15CFCE83D0D1AB60B8 /* WaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1E86BC3391D40D65048EA75EE96137 /* WaterfallLayout.swift */; };
-		505740D1F36217A75A2A135E0E1C6662 /* WaterfallLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A47A8840CEF1D2F6FC095DDB7A0F250 /* WaterfallLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		580926781A8BEE6BD79E019F291B7190 /* Pods-RandomColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 83E3AD7B05064E054E7F4A035595163F /* Pods-RandomColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F6F8BB820349FA0845F0DD2B528CFAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		BFD9EF96B38FC96EA096D3DEE32BBDA6 /* WaterfallLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B22E787D514CE9D2206DB248CEE474E /* WaterfallLayout-dummy.m */; };
-		D5F2E861141573B8EE0B55CC1AC75147 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		51497F34B554CF0DE45B96ACEB3B3CA6 /* Pods-RandomColors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0611CACB54BB2F5842F13F3D6DF3F212 /* Pods-RandomColors-dummy.m */; };
+		8017FEAA243425FC31CBA8B0275E6764 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A4051DAF16B8C03E9880175DA33EAA65 /* Pods-RandomColors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A2DDFA5875D71843F03D84155D7F42B /* Pods-RandomColors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		51675A10F8190B3B583FF9A6CF5A0384 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 97188A8760F19F27B76E0BEBA65DA06D;
-			remoteInfo = WaterfallLayout;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		0397C05E0CE8ECC4061A127AE5D278E7 /* Pods-RandomColors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RandomColors.release.xcconfig"; sourceTree = "<group>"; };
-		26A32CD3766E3E5332EDE4F67E708618 /* WaterfallLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WaterfallLayout-prefix.pch"; sourceTree = "<group>"; };
-		2B22E787D514CE9D2206DB248CEE474E /* WaterfallLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WaterfallLayout-dummy.m"; sourceTree = "<group>"; };
+		0521ED21C8CF9593115BCE61C78B38F7 /* Pods-RandomColors-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RandomColors-acknowledgements.markdown"; sourceTree = "<group>"; };
+		060BB5A7D9FB1A03EC89E9C0AF8BE80E /* Pods-RandomColors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RandomColors.release.xcconfig"; sourceTree = "<group>"; };
+		0611CACB54BB2F5842F13F3D6DF3F212 /* Pods-RandomColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RandomColors-dummy.m"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3ACC118D83950A59DA4E9DDBA66C9FC5 /* Pods-RandomColors-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RandomColors-acknowledgements.markdown"; sourceTree = "<group>"; };
-		41AD26F371254FD2B30457EA4A05BD6E /* Pods-RandomColors-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RandomColors-frameworks.sh"; sourceTree = "<group>"; };
-		4344D289CE2A616B4E7101C6AB059E89 /* Pods-RandomColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RandomColors.modulemap"; sourceTree = "<group>"; };
-		4C303CEB9A0749AC192954939A4D181B /* WaterfallLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WaterfallLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F982300FEE2C7F3467F3F3B4297AB3E /* Pods-RandomColors-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RandomColors-acknowledgements.plist"; sourceTree = "<group>"; };
-		5A47A8840CEF1D2F6FC095DDB7A0F250 /* WaterfallLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WaterfallLayout-umbrella.h"; sourceTree = "<group>"; };
-		83E3AD7B05064E054E7F4A035595163F /* Pods-RandomColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RandomColors-umbrella.h"; sourceTree = "<group>"; };
-		8F1E86BC3391D40D65048EA75EE96137 /* WaterfallLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WaterfallLayout.swift; path = Sources/WaterfallLayout.swift; sourceTree = "<group>"; };
-		923C33E88E29A1629EDD7103BBCA6335 /* WaterfallLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WaterfallLayout-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F22051C6C86FA35CA5C706DEB8D357C /* Pods-RandomColors-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RandomColors-Info.plist"; sourceTree = "<group>"; };
-		A190EBCA618E389FC40821B94B4C25D5 /* Pods_RandomColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7364EDEDD885C3113D2D7855444EF12 /* WaterfallLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WaterfallLayout.xcconfig; sourceTree = "<group>"; };
-		ADD17E32D2E5EFF1C2926D720814ECED /* Pods-RandomColors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RandomColors.debug.xcconfig"; sourceTree = "<group>"; };
-		BE9219DD6CFB119D381BAD92E0B8850A /* Pods-RandomColors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RandomColors-dummy.m"; sourceTree = "<group>"; };
-		C2DB8A653C98638AB5B38F1F08456683 /* WaterfallLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WaterfallLayout.modulemap; sourceTree = "<group>"; };
+		42961F9EA7F8B0809AE57B153A8733E4 /* Pods-RandomColors-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RandomColors-Info.plist"; sourceTree = "<group>"; };
+		569DA281D7E7E83EF13A7585F6E38F4F /* Pods-RandomColors-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RandomColors-acknowledgements.plist"; sourceTree = "<group>"; };
+		5A2DDFA5875D71843F03D84155D7F42B /* Pods-RandomColors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RandomColors-umbrella.h"; sourceTree = "<group>"; };
+		70FF0BBE38F1007790E487B02FA09295 /* Pods-RandomColors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RandomColors.modulemap"; sourceTree = "<group>"; };
+		91C5E962EA4753345DE668D80AE67920 /* Pods-RandomColors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RandomColors.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A190EBCA618E389FC40821B94B4C25D5 /* Pods_RandomColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RandomColors.framework; path = "Pods-RandomColors.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		10889B1049DE80F4E09DD6AC3BC749BC /* Frameworks */ = {
+		89F981D751C6674BEB2A9098DC6264BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F6F8BB820349FA0845F0DD2B528CFAD /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		85C2A9E53731CA3E78F08E2034362AF0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D5F2E861141573B8EE0B55CC1AC75147 /* Foundation.framework in Frameworks */,
+				8017FEAA243425FC31CBA8B0275E6764 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14D20019A9A03F14EF8A1F07573E3584 /* Pods-RandomColors */ = {
+		2CEF46DBF055B8B6D3A36A8E8B580295 /* Pods-RandomColors */ = {
 			isa = PBXGroup;
 			children = (
-				4344D289CE2A616B4E7101C6AB059E89 /* Pods-RandomColors.modulemap */,
-				3ACC118D83950A59DA4E9DDBA66C9FC5 /* Pods-RandomColors-acknowledgements.markdown */,
-				4F982300FEE2C7F3467F3F3B4297AB3E /* Pods-RandomColors-acknowledgements.plist */,
-				BE9219DD6CFB119D381BAD92E0B8850A /* Pods-RandomColors-dummy.m */,
-				41AD26F371254FD2B30457EA4A05BD6E /* Pods-RandomColors-frameworks.sh */,
-				9F22051C6C86FA35CA5C706DEB8D357C /* Pods-RandomColors-Info.plist */,
-				83E3AD7B05064E054E7F4A035595163F /* Pods-RandomColors-umbrella.h */,
-				ADD17E32D2E5EFF1C2926D720814ECED /* Pods-RandomColors.debug.xcconfig */,
-				0397C05E0CE8ECC4061A127AE5D278E7 /* Pods-RandomColors.release.xcconfig */,
+				70FF0BBE38F1007790E487B02FA09295 /* Pods-RandomColors.modulemap */,
+				0521ED21C8CF9593115BCE61C78B38F7 /* Pods-RandomColors-acknowledgements.markdown */,
+				569DA281D7E7E83EF13A7585F6E38F4F /* Pods-RandomColors-acknowledgements.plist */,
+				0611CACB54BB2F5842F13F3D6DF3F212 /* Pods-RandomColors-dummy.m */,
+				42961F9EA7F8B0809AE57B153A8733E4 /* Pods-RandomColors-Info.plist */,
+				5A2DDFA5875D71843F03D84155D7F42B /* Pods-RandomColors-umbrella.h */,
+				91C5E962EA4753345DE668D80AE67920 /* Pods-RandomColors.debug.xcconfig */,
+				060BB5A7D9FB1A03EC89E9C0AF8BE80E /* Pods-RandomColors.release.xcconfig */,
 			);
 			name = "Pods-RandomColors";
 			path = "Target Support Files/Pods-RandomColors";
 			sourceTree = "<group>";
 		};
-		1BBE7E24836D235A117137A29C63559B /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				14D20019A9A03F14EF8A1F07573E3584 /* Pods-RandomColors */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		450BABDE9EE418EF530A723C116C527B /* Products */ = {
+		5C893ABC130381AA7F36307F928303F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				A190EBCA618E389FC40821B94B4C25D5 /* Pods_RandomColors.framework */,
-				4C303CEB9A0749AC192954939A4D181B /* WaterfallLayout.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8369A3EA8D69EA616BA9B712A4CB727F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C2DB8A653C98638AB5B38F1F08456683 /* WaterfallLayout.modulemap */,
-				A7364EDEDD885C3113D2D7855444EF12 /* WaterfallLayout.xcconfig */,
-				2B22E787D514CE9D2206DB248CEE474E /* WaterfallLayout-dummy.m */,
-				923C33E88E29A1629EDD7103BBCA6335 /* WaterfallLayout-Info.plist */,
-				26A32CD3766E3E5332EDE4F67E708618 /* WaterfallLayout-prefix.pch */,
-				5A47A8840CEF1D2F6FC095DDB7A0F250 /* WaterfallLayout-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/WaterfallLayout";
-			sourceTree = "<group>";
-		};
-		B9097DC3F9E3D2A8B9D760C2A022579A /* WaterfallLayout */ = {
-			isa = PBXGroup;
-			children = (
-				8F1E86BC3391D40D65048EA75EE96137 /* WaterfallLayout.swift */,
-				8369A3EA8D69EA616BA9B712A4CB727F /* Support Files */,
-			);
-			path = WaterfallLayout;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -139,9 +75,8 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				FA503FECFCF005FDC4101C50B74581E8 /* Pods */,
-				450BABDE9EE418EF530A723C116C527B /* Products */,
-				1BBE7E24836D235A117137A29C63559B /* Targets Support Files */,
+				5C893ABC130381AA7F36307F928303F2 /* Products */,
+				EA7BE262F1DFCDFA0F785C2C5826AEFB /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,30 +88,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FA503FECFCF005FDC4101C50B74581E8 /* Pods */ = {
+		EA7BE262F1DFCDFA0F785C2C5826AEFB /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B9097DC3F9E3D2A8B9D760C2A022579A /* WaterfallLayout */,
+				2CEF46DBF055B8B6D3A36A8E8B580295 /* Pods-RandomColors */,
 			);
-			name = Pods;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A1A7123B7A66A2C83C71430B3300D8F8 /* Headers */ = {
+		D60EC0ED7F0064402A6ADF13D20606AD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				505740D1F36217A75A2A135E0E1C6662 /* WaterfallLayout-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D27A4C982093B93DEACEA60E60B1C416 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				580926781A8BEE6BD79E019F291B7190 /* Pods-RandomColors-umbrella.h in Headers */,
+				A4051DAF16B8C03E9880175DA33EAA65 /* Pods-RandomColors-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,39 +112,20 @@
 /* Begin PBXNativeTarget section */
 		4A66722651721044EAE1A58A81FD677E /* Pods-RandomColors */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 47C10706641E8A7579207F04EFE07457 /* Build configuration list for PBXNativeTarget "Pods-RandomColors" */;
+			buildConfigurationList = B1F7554D660F4D265C9646E8CDE40F88 /* Build configuration list for PBXNativeTarget "Pods-RandomColors" */;
 			buildPhases = (
-				D27A4C982093B93DEACEA60E60B1C416 /* Headers */,
-				E56C1A0FF440EF0E235AB229B1C8E0B8 /* Sources */,
-				10889B1049DE80F4E09DD6AC3BC749BC /* Frameworks */,
-				4C8B18B04A721E98D70822A926AA611A /* Resources */,
+				D60EC0ED7F0064402A6ADF13D20606AD /* Headers */,
+				4A46CC58CCEE595E5A5C1231DD1183D9 /* Sources */,
+				89F981D751C6674BEB2A9098DC6264BE /* Frameworks */,
+				28AE5AF378B792537D71FAA00D7524F9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EEFE8E24E2E58773F5F7DFCBE1206006 /* PBXTargetDependency */,
 			);
 			name = "Pods-RandomColors";
 			productName = "Pods-RandomColors";
 			productReference = A190EBCA618E389FC40821B94B4C25D5 /* Pods_RandomColors.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		97188A8760F19F27B76E0BEBA65DA06D /* WaterfallLayout */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7FF767C82CE0771F0144147817AED8B5 /* Build configuration list for PBXNativeTarget "WaterfallLayout" */;
-			buildPhases = (
-				A1A7123B7A66A2C83C71430B3300D8F8 /* Headers */,
-				F134BB17A61E1FCC28CD78E120140788 /* Sources */,
-				85C2A9E53731CA3E78F08E2034362AF0 /* Frameworks */,
-				4B14897C71C28611EA9F46A6BA5FCAA8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = WaterfallLayout;
-			productName = WaterfallLayout;
-			productReference = 4C303CEB9A0749AC192954939A4D181B /* WaterfallLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -228,40 +136,26 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
-				TargetAttributes = {
-					97188A8760F19F27B76E0BEBA65DA06D = {
-						LastSwiftMigration = 1150;
-					};
-				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 450BABDE9EE418EF530A723C116C527B /* Products */;
+			productRefGroup = 5C893ABC130381AA7F36307F928303F2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				4A66722651721044EAE1A58A81FD677E /* Pods-RandomColors */,
-				97188A8760F19F27B76E0BEBA65DA06D /* WaterfallLayout */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4B14897C71C28611EA9F46A6BA5FCAA8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C8B18B04A721E98D70822A926AA611A /* Resources */ = {
+		28AE5AF378B792537D71FAA00D7524F9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -271,73 +165,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E56C1A0FF440EF0E235AB229B1C8E0B8 /* Sources */ = {
+		4A46CC58CCEE595E5A5C1231DD1183D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12755C4D8E721C9CA2329FB7FCBCD347 /* Pods-RandomColors-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F134BB17A61E1FCC28CD78E120140788 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BFD9EF96B38FC96EA096D3DEE32BBDA6 /* WaterfallLayout-dummy.m in Sources */,
-				1EAB13CD10A30C15CFCE83D0D1AB60B8 /* WaterfallLayout.swift in Sources */,
+				51497F34B554CF0DE45B96ACEB3B3CA6 /* Pods-RandomColors-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		EEFE8E24E2E58773F5F7DFCBE1206006 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WaterfallLayout;
-			target = 97188A8760F19F27B76E0BEBA65DA06D /* WaterfallLayout */;
-			targetProxy = 51675A10F8190B3B583FF9A6CF5A0384 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		3A197ED1E8A54AA34C8BED332CDC5C2D /* Debug */ = {
+		7BB590AB0187C9C83BC82CD854B5120C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7364EDEDD885C3113D2D7855444EF12 /* WaterfallLayout.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WaterfallLayout/WaterfallLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WaterfallLayout/WaterfallLayout-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/WaterfallLayout/WaterfallLayout.modulemap";
-				PRODUCT_MODULE_NAME = WaterfallLayout;
-				PRODUCT_NAME = WaterfallLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		80EB912804A034A1F50232F1A0010CA6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADD17E32D2E5EFF1C2926D720814ECED /* Pods-RandomColors.debug.xcconfig */;
+			baseConfigurationReference = 91C5E962EA4753345DE668D80AE67920 /* Pods-RandomColors.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -373,45 +214,9 @@
 			};
 			name = Debug;
 		};
-		C20CF99E2F132C1E807512414B692397 /* Release */ = {
+		ABB26537F8ABFABC5C98C8D30251FF96 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7364EDEDD885C3113D2D7855444EF12 /* WaterfallLayout.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WaterfallLayout/WaterfallLayout-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WaterfallLayout/WaterfallLayout-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/WaterfallLayout/WaterfallLayout.modulemap";
-				PRODUCT_MODULE_NAME = WaterfallLayout;
-				PRODUCT_NAME = WaterfallLayout;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C36AA7B61E2E93947267F5943DBD73E2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0397C05E0CE8ECC4061A127AE5D278E7 /* Pods-RandomColors.release.xcconfig */;
+			baseConfigurationReference = 060BB5A7D9FB1A03EC89E9C0AF8BE80E /* Pods-RandomColors.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -575,15 +380,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		47C10706641E8A7579207F04EFE07457 /* Build configuration list for PBXNativeTarget "Pods-RandomColors" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				80EB912804A034A1F50232F1A0010CA6 /* Debug */,
-				C36AA7B61E2E93947267F5943DBD73E2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -593,11 +389,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7FF767C82CE0771F0144147817AED8B5 /* Build configuration list for PBXNativeTarget "WaterfallLayout" */ = {
+		B1F7554D660F4D265C9646E8CDE40F88 /* Build configuration list for PBXNativeTarget "Pods-RandomColors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A197ED1E8A54AA34C8BED332CDC5C2D /* Debug */,
-				C20CF99E2F132C1E807512414B692397 /* Release */,
+				7BB590AB0187C9C83BC82CD854B5120C /* Debug */,
+				ABB26537F8ABFABC5C98C8D30251FF96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

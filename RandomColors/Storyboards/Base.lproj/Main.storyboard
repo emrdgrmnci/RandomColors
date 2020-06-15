@@ -123,6 +123,7 @@
                     <connections>
                         <outlet property="boxDescription" destination="PRP-Gz-aeo" id="bvc-mF-jqa"/>
                         <outlet property="boxName" destination="Gb3-dg-iYR" id="WYZ-fj-wHx"/>
+                        <outlet property="changeColorButton" destination="tke-az-vpY" id="qDP-Bx-jlT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Z2-8S-6gs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -5,6 +5,6 @@ target 'RandomColors' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for RandomColors
-pod 'WaterfallLayout', '~> 0.1'
+  # Pods for Random
+
 end
