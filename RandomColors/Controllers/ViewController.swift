@@ -8,9 +8,6 @@
 
 import UIKit
 
-//MARK: - Global constant
-let colors = StaticColors.allCases
-
 final class ViewController: UIViewController {
 
     //MARK: - Variables
@@ -18,8 +15,6 @@ final class ViewController: UIViewController {
 
     private var indexPath: IndexPath = []
     private var selectedColorInfo: UIColor?
-    private let randomItemsInSection = Int.random(in: 10...30)
-    private var cellHeightAndColors = Dictionary<CGFloat, UIColor>()
 
     let allColors: [Box] = [SystemRed(), SystemYellow(), SystemGreen(), SystemBlue()]
     var boxes: [Box] = []
@@ -106,12 +101,10 @@ final class ViewController: UIViewController {
 //MARK: - UICollectionViewDataSource
 extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //        return randomItemsInSection
         return boxes.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        //        let box = boxes[indexPath.row]
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RandomCollectionViewCell", for: indexPath) as? RandomCollectionViewCell else {
             fatalError("Unable to dequeue RandomCell.")
         }
