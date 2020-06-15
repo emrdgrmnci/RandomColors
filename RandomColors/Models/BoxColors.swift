@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit.UIColor
 
 
 enum Lorem: String {
@@ -23,7 +24,7 @@ enum Color: String, CaseIterable {
     case systemBlue = "#007AFF"
 }
 
-protocol Box: class {
+ protocol Box: class {
     var height: Float { get set }
     var boxName: String { get set }
     var boxNumber: Int { get set }
